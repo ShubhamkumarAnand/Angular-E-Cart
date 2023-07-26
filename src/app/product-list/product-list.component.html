@@ -1,0 +1,9 @@
+<img [src]="image" alt="iphone Image" class="w-48">
+<p>Name: {{name}}</p>
+<p>Price: $ {{price}}</p>
+<p>Color: {{color}}</p>
+<p>Discounted Price: $ {{getDiscountedPrice().toFixed(2)}}</p>
+<button (click)="decreaseProductCount()" [disabled]="!(stock > 0)" class="px-4 py-2 border-2 cursor-pointer">Buy Now
+</button>
+<br>
+<input [attr.aria-hidden]="stock" [value]="inputValue" type="text">
