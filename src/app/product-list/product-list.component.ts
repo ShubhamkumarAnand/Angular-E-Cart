@@ -29,5 +29,4 @@ export class ProductListComponent {
       this.itemAdded += 1;
     }
   }
-
 }
