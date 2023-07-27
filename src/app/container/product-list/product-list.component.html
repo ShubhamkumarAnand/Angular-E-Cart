@@ -1,6 +1,6 @@
 <div class="ekart--products--container">
   <div *ngFor="let item of products" class="ekart--product--item hover:scale-110">
-    <div class="ekart-wishlist-sale-container ">
+    <div class="ekart-wishlist-sale-container">
       <div class="ekart--add--to--wishlist">
         <i aria-hidden="true" class="fa fa-heart-o"></i>
       </div>
@@ -17,5 +17,8 @@
     <div class="ekart--product--name">{{item.name}}</div>
     <div class="ekart--product--category">{{item.gender}} . {{item.category}} . {{item.brand}}</div>
     <div class="ekart--product--available-colors">{{item.color.length}} Colors . Best Seller</div>
+    <div [ngStyle]="{color: item.is_in_inventory? 'Green': 'Red'}" class="font-bold ekart--product--available-colors">
+      {{item.is_in_inventory ? 'Available in Stock' : 'Not Available in stock' }}
+    </div>
   </div>
 </div>
