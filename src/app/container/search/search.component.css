@@ -30,3 +30,11 @@
   margin: 20px auto;
   padding: 10px 140px;
 }
+
+.btn-disabled {
+  padding: 15px 30px;
+  background: #808080;
+  margin-left: 1px;
+  color: #ffffff;
+  font-weight: bold;
+}

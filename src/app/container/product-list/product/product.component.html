@@ -13,7 +13,7 @@
     <div class="ekart--add--to--price">
       {{product.price}}
     </div>
-    <div class="ekart--product--name max-w-30">{{product.name}}</div>
+    <div class="ekart--product--name truncate">{{product.name}}</div>
     <div class="ekart--product--category">{{product.gender}} . {{product.category}} . {{product.brand}}</div>
     <div class="ekart--product--available-colors">{{product.color.length}} Colors . Best Seller</div>
     <div [ngStyle]="{color: product.is_in_inventory? 'Green': 'Red'}" class="font-bold ekart--product--available-colors">

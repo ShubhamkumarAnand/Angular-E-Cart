@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  zoom: 1;
 }
 
 a {
@@ -19,6 +20,3 @@ a {
   padding: 0 10px;
 }
 
-#my {
-  zoom: 110%;
-}

@@ -51,6 +51,7 @@
   font-size: 14px;
   color: #28282B;
   margin-top: 7px;
+  max-width: 250px;
 }
 
 .ekart--product--category,
